@@ -35,7 +35,7 @@ map.on('locationfound', e => {
 });
 /* Iconos  */
 var myIcon = L.icon({
-  iconUrl: '../img/emojis/good.png',
+  iconUrl: 'https://github.com/AGS991/expresate/blob/master/backend/img/emojis/good.png?raw=true',
   iconSize: [50, 50],
   iconAnchor: [20, 40],
   popupAnchor: [-3, -76],
