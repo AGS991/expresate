@@ -35,7 +35,7 @@ map.on('locationfound', e => {
 });
 /* Iconos  */
 var myIcon = L.icon({
-  iconUrl: 'img/emojis/good.png',
+  iconUrl: '../img/emojis/good.png',
   iconSize: [50, 50],
   iconAnchor: [20, 40],
   popupAnchor: [-3, -76],
@@ -73,7 +73,7 @@ function onMapClick(e) {
   var coords = [e.latlng.lat, e.latlng.lng];
   console.log(coords);
   console.log('click!!');
-  var marker = new L.Marker([e.latlng.lat, e.latlng.lng]);
+  var marker = new L.Marker([e.latlng.lat, e.latlng.lng], { icon: myIcon });
   marker.addTo(map);
   marker.bindPopup('AGREGADO!');
   marker.openPopup();
